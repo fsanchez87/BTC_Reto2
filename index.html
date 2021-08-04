@@ -1,30 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <title>Reto 2 del Bootcamp Fronted</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="keywords" content="BTC, GeeksHubs, Reto 2" />
     <meta name="author" content="Francisco Sánchez" />
     <meta name="description" content="Reto 2 del Bootcamp Fronted" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Other CSS -->
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="" crossorigin="anonymous" />
 </head>
 
 <body>
+    <div class="container">
+        <header>
+            <h2>Reto 2 - Dynamic Showcase</h2>
+        </header>
 
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    <!-- Products -->
+                    <div class="col-md-6">
+                        <h3>Products</h3>
+                        <div id="products" class="products">
+                            <ul class="products__list">
+                                <li id="product" class="products__item"><span>Product 1</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Shopping cart -->
+                    <div class="col-md-6">
+                        <h3>Shopping cart</h3>
+                        <div id="cart" class="cart">
+                            <ul class="cart__list"></ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Ticket -->
+            <div class="col-md-3">
+                <h3>Ticket</h3>
+                <div class="ticket">
+                    <span>0.00</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            Reto realizado por Francisco Sánchez
+        </footer>
+
+    </div>
     <!-- Optional JavaScript -->
     <script src="js/index.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.6.0.min.js" integrity="" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="js/bootstrap.min.js" integrity="" crossorigin="anonymous"></script>
 </body>
 
