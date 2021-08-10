@@ -20,18 +20,51 @@
     <div class="container py-4">
         <header class="pb-2 mb-4 border-bottom ">
             <h2>Reto 2 - Dynamic Showcase</h2>
-            
+
         </header>
 
         <div class="row">
             <div class="col-md-9">
                 <div class="row">
+
                     <!-- Products -->
                     <div class="col-md-6 ">
                         <h3>Products</h3>
-                        <div id="products" class="products mt-4 p-3 bg-light border rounded-3">
+                        <div id="products" class="products mt-4 p-3 bg-light border rounded-3" ondrop="drop(event)"
+                            ondragover="allowDrop(event)">
                             <ul class="products__list list-group">
-                                <li id="product" class="products__item list-group-item d-flex justify-content-between align-items-center">Product 1<span>14 €</span></li>
+                                <li id="product-1"
+                                    class="products__item list-group-item d-flex justify-content-between align-items-center"
+                                    data-price="14.00" draggable="true" ondragstart="drag(event)">Product 1<span>14
+                                        €</span></li>
+                                <li id="product-2"
+                                    class="products__item list-group-item d-flex justify-content-between align-items-center"
+                                    data-price="4.00" draggable="true" ondragstart="drag(event)">Product 2<span>4
+                                        €</span></li>
+                                <li id="product-3"
+                                    class="products__item list-group-item d-flex justify-content-between align-items-center"
+                                    data-price="1.50" draggable="true" ondragstart="drag(event)">Product 3<span>1.50
+                                        €</span></li>
+                                <li id="product-4"
+                                    class="products__item list-group-item d-flex justify-content-between align-items-center"
+                                    data-price="7.00" draggable="true" ondragstart="drag(event)">Product 4<span>7
+                                        €</span></li>
+                                <li id="product-5"
+                                    class="products__item list-group-item d-flex justify-content-between align-items-center"
+                                    data-price="0.75" draggable="true" ondragstart="drag(event)">Product 5<span>0.75
+                                        €</span></li>
+                                <li id="product-6"
+                                    class="products__item list-group-item d-flex justify-content-between align-items-center"
+                                    data-price="9.99" draggable="true" ondragstart="drag(event)">Product 6<span>9.99
+                                        €</span></li>
+                                <li id="product-7"
+                                    class="products__item list-group-item d-flex justify-content-between align-items-center"
+                                    data-price="2.25" draggable="true" ondragstart="drag(event)">Product 7<span>2.25
+                                        €</span></li>
+                                <li id="product-8"
+                                    class="products__item list-group-item d-flex justify-content-between align-items-center"
+                                    data-price="1" draggable="true" ondragstart="drag(event)">Product 8<span>1 €</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -39,7 +72,8 @@
                     <!-- Shopping cart -->
                     <div class="col-md-6 ">
                         <h3>Shopping cart</h3>
-                        <div id="cart" class="cart mt-4 p-3 bg-light border rounded-3">
+                        <div id="cart" class="cart mt-4 p-3 bg-light border rounded-3" ondrop="drop(event)"
+                            ondragover="allowDrop(event)">
                             <ul class="cart__list"></ul>
                         </div>
                     </div>
@@ -51,7 +85,7 @@
             <div class="col-md-3 ">
                 <h3>Ticket</h3>
                 <div id="ticket" class="ticket mt-4 p-3 text-white bg-dark border rounded-3">
-                    <span>0.00</span>
+                    <span class="ticket__total">0.00</span>
                 </div>
             </div>
         </div>

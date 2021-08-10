@@ -2,6 +2,9 @@
 .cart {
     height: 75vmin;
 }
+.products__item {
+    margin-bottom: 1em;
+}
 
 .ticket {
     height: 25vmin;
