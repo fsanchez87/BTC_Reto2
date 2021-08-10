@@ -2,10 +2,17 @@
 .cart {
     height: 75vmin;
 }
+
 .products__item {
     margin-bottom: 1em;
 }
 
 .ticket {
     height: 25vmin;
+    display: flex;
+}
+
+.ticket__total {
+    margin: auto;
+    font-size: 3.5em;
 }

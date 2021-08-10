@@ -61,10 +61,7 @@
                                     class="products__item list-group-item d-flex justify-content-between align-items-center"
                                     data-price="2.25" draggable="true" ondragstart="drag(event)">Product 7<span>2.25
                                         €</span></li>
-                                <li id="product-8"
-                                    class="products__item list-group-item d-flex justify-content-between align-items-center"
-                                    data-price="1" draggable="true" ondragstart="drag(event)">Product 8<span>1 €</span>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -74,7 +71,7 @@
                         <h3>Shopping cart</h3>
                         <div id="cart" class="cart mt-4 p-3 bg-light border rounded-3" ondrop="drop(event)"
                             ondragover="allowDrop(event)">
-                            <ul class="cart__list"></ul>
+                            <ul class="cart__list list-group h-100"></ul>
                         </div>
                     </div>
 
@@ -85,8 +82,8 @@
             <div class="col-md-3 ">
                 <h3>Ticket</h3>
                 <div id="ticket" class="ticket mt-4 p-3 text-white bg-dark border rounded-3">
-                    <span class="ticket__total">0.00</span>
-                </div>
+                    <span class="ticket__total">0.00 €</span>
+                </div> 
             </div>
         </div>
 
