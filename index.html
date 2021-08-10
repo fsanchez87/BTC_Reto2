@@ -31,10 +31,10 @@
                     <!-- Products -->
                     <div class="col-md-6 ">
                         <h3>Products</h3>
-                        <div id="products" class="products mt-4 p-3 bg-light border rounded-3" ondrop="drop(event)"
+                        <div id="products" class="products card mt-4 p-3 border rounded-3" ondrop="drop(event)"
                         ondragover="allowDrop(event)">
                         
-                            <ul class="products__list list-group ">
+                            <ul class="products__list list-group list-group-flush h-100">
                                 <li id="product-1"
                                     class="products__item list-group-item d-flex justify-content-between align-items-center"
                                     data-price="14.00" draggable="true" ondragstart="drag(event)"><i class="fas fa-pizza-slice fa-2x" aria-hidden="true"></i>Pizza<span>14
@@ -69,13 +69,12 @@
                     </div>
 
                     <!-- Shopping cart -->
-                    <div class="col-md-6 ">
+                    <div class="col-md-6">
                         
                         <h3><i class="fas fa-cart-arrow-down"></i> Shopping cart</h3>
-                        <div id="cart" class="cart mt-4 p-3 bg-light border rounded-3" ondrop="drop(event)"
+                        <div id="cart" class="cart mt-4 p-3 border rounded-3" ondrop="drop(event)"
                             ondragover="allowDrop(event)">
-                            <ul class="cart__list list-group h-100">
-
+                            <ul class="cart__list list-group list-group-flush h-100">
                             </ul>
                         </div>
                     </div>
