@@ -34,34 +34,34 @@
                         <div id="products" class="products mt-4 p-3 bg-light border rounded-3" ondrop="drop(event)"
                         ondragover="allowDrop(event)">
                         
-                            <ul class="products__list list-group">
+                            <ul class="products__list list-group ">
                                 <li id="product-1"
                                     class="products__item list-group-item d-flex justify-content-between align-items-center"
-                                    data-price="14.00" draggable="true" ondragstart="drag(event)"><i class="fas fa-pizza-slice fa-2x" aria-hidden="true"></i><span>14
+                                    data-price="14.00" draggable="true" ondragstart="drag(event)"><i class="fas fa-pizza-slice fa-2x" aria-hidden="true"></i>Pizza<span>14
                                         €</span></li>
                                 <li id="product-2"
                                     class="products__item list-group-item d-flex justify-content-between align-items-center"
-                                    data-price="4.00" draggable="true" ondragstart="drag(event)"><i class="fas fa-hamburger fa-2x" aria-hidden="true"></i><span>4
+                                    data-price="4.00" draggable="true" ondragstart="drag(event)"><i class="fas fa-hamburger fa-2x" aria-hidden="true"></i>Hamburger<span>4
                                         €</span></li>
                                 <li id="product-3"
                                     class="products__item list-group-item d-flex justify-content-between align-items-center"
-                                    data-price="1.50" draggable="true" ondragstart="drag(event)"><i class="fas fa-lemon fa-2x" aria-hidden="true"></i><span>1.50
+                                    data-price="1.50" draggable="true" ondragstart="drag(event)"><i class="fas fa-lemon fa-2x" aria-hidden="true"></i>Lemon<span>1.50
                                         €</span></li>
                                 <li id="product-4"
                                     class="products__item list-group-item d-flex justify-content-between align-items-center"
-                                    data-price="7.00" draggable="true" ondragstart="drag(event)"><i class="fas fa-cheese fa-2x"> </i><span>7
+                                    data-price="7.00" draggable="true" ondragstart="drag(event)"><i class="fas fa-cheese fa-2x"></i>Cheese<span>7
                                         €</span></li>
                                 <li id="product-5"
                                     class="products__item list-group-item d-flex justify-content-between align-items-center"
-                                    data-price="0.75" draggable="true" ondragstart="drag(event)"><i class="fas fa-egg fa-2x" aria-hidden="true"></i><span>0.75
+                                    data-price="0.75" draggable="true" ondragstart="drag(event)"><i class="fas fa-egg fa-2x" aria-hidden="true"></i>Eggs<span>0.75
                                         €</span></li>
                                 <li id="product-6"
                                     class="products__item list-group-item d-flex justify-content-between align-items-center"
-                                    data-price="9.99" draggable="true" ondragstart="drag(event)"><i class="fas fa-fish fa-2x" aria-hidden="true"></i><span>9.99
+                                    data-price="9.99" draggable="true" ondragstart="drag(event)"><i class="fas fa-fish fa-2x" aria-hidden="true"></i>Fish<span>9.99
                                         €</span></li>
                                 <li id="product-7"
                                     class="products__item list-group-item d-flex justify-content-between align-items-center"
-                                    data-price="2.25" draggable="true" ondragstart="drag(event)"><i class="fas fa-bacon fa-2x" aria-hidden="true"></i><span>2.25
+                                    data-price="2.25" draggable="true" ondragstart="drag(event)"><i class="fas fa-bacon fa-2x" aria-hidden="true"></i>Bacon<span>2.25
                                         €</span></li>
 
                             </ul>
@@ -70,10 +70,13 @@
 
                     <!-- Shopping cart -->
                     <div class="col-md-6 ">
-                        <h3>Shopping cart</h3>
+                        
+                        <h3><i class="fas fa-cart-arrow-down"></i> Shopping cart</h3>
                         <div id="cart" class="cart mt-4 p-3 bg-light border rounded-3" ondrop="drop(event)"
                             ondragover="allowDrop(event)">
-                            <ul class="cart__list list-group h-100"></ul>
+                            <ul class="cart__list list-group h-100">
+
+                            </ul>
                         </div>
                     </div>
 
@@ -82,7 +85,7 @@
 
             <!-- Ticket -->
             <div class="col-md-3 ">
-                <h3>Ticket</h3>
+                <h3><i class="fas fa-euro-sign"></i> Ticket</h3>
                 <div id="ticket" class="ticket mt-4 p-3 text-white bg-dark border rounded-3">
                     <span class="ticket__total">0.00 €</span>
                 </div> 
